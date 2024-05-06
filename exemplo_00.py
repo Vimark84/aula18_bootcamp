@@ -1,4 +1,5 @@
 import requests
+from pydantic import BaseModel
 
 #requests.get    # select
 #requests.post   # create
@@ -14,6 +15,4 @@ for type_info in data_types:
     types_list.append(type_info['type']['name'])
 types = ', '.join(types_list)
 print(data['name'], types)
-
-
 
